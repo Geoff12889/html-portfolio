@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid</title>
+  <style>
+    div{
+      color: black;
+      text-align: center;
+      font-size: 4rem;
+      background-color: #444;
+      font-family: Helvetica, sans-serif;
+      font-weight: 600;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: 200px 200px 200px;
+      grid-template-rows: 200px 200px 200px 200px 100px;
+      gap: 30px;
+      padding: 30px;
+      border: 10px solid black;
+      width: 660px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .card {
+      background-color: #999;
+      padding-top: 40px;
+      border: 7px solid black;
+      border-radius: 100px;
+      position: relative;
+    }
+
+    .card:hover {
+      background-color: #222;
+      color: white;
+      border: 7px solid #888;
+      cursor: pointer;
+    }
+
+    .card:active {
+      background-color: #ccc;
+      color: #eee;
+      border: 7px solid #ddd;
+    }
+
+    span {
+      text-transform: uppercase;
+      display: block;
+      font-size: 3rem;
+      position: relative;
+      z-index: 1;
+      top: -12px;
+    }
+
+    .last {
+      grid-column: span 3;
+      padding-top: 15px;
+      background-color: rgb(15, 245, 96);
+    }
+
+    .last:hover {
+      background-color: rgb(27, 200, 110);
+      border-color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>CSS Grid</h1>
+  <div class="grid-container">
+    <div class="card" style="padding-top: 65px;">1</div>
+    <div class="card">2<span>abc</span></div>
+    <div class="card">3<span>def</span></div>
+    <div class="card">4<span>ghi</span></div>
+    <div class="card">5<span>jkl</span></div>
+    <div class="card">6<span>mno</span></div>
+    <div class="card">7<span>pqrs</span></div>
+    <div class="card">8<span>tuv</span></div>
+    <div class="card">0<span>wxyz</span></div>
+    <div class="card" style="font-size: 10rem; padding-top: 55px">*</div>
+    <div class="card">0<span>+</span></div>
+    <div class="card" style="font-size: 6rem; padding-top: 50px">#</div>
+    <div class="last card">CALL</div>
+  </div>
+
+</body>
+
+</html>

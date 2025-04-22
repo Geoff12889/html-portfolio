@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Flexbox</title>
+  <style>
+    .flex-container {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .card {
+      background: rgb(135, 120, 200);
+      border: 6px dashed rgb(90, 60, 111);
+      border-radius: 40px;
+      height: 100px;
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 1.5rem;
+      color: rgb(240, 200, 145);
+      text-align: center;
+    }
+
+    .card:hover {
+      background: rgb(234, 120, 7);
+      border: 6px solid rgb(250, 150, 73);
+      color: white;
+      border-radius: 20px;
+    }
+
+    span {
+      position: relative;
+      top: 33px;
+    }
+
+    .first {
+      flex: 1;
+    }
+
+    .second {
+      flex: 0.5;
+    }
+
+    .third {
+      flex: 0.25;
+    }
+
+    .fourth {
+      flex: 0.125;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>CSS Flexbox</h1>
+  <div class="flex-container">
+    <div class="first card"><span>1</span></div>
+    <div class="second card"><span>1/2</span></div>
+    <div class="third card"><span>1/4</span></div>
+    <div class="fourth card"><span>1/8</span></div>
+  </div>
+
+  <div class="flex-container">
+    <div class="fourth card"><span>1/8</span></div>
+    <div class="third card"><span>1/4</span></div>
+    <div class="second card"><span>1/2</span></div>
+    <div class="first card"><span>1</span></div>
+  </div>
+
+  <div class="flex-container">
+    <div class="first card"><span>1</span></div>
+    <div class="second card"><span>1/2</span></div>
+    <div class="third card"><span>1/4</span></div>
+    <div class="fourth card"><span>1/8</span></div>
+  </div>
+
+  <div class="flex-container">
+    <div class="fourth card"><span>1/8</span></div>
+    <div class="third card"><span>1/4</span></div>
+    <div class="second card"><span>1/2</span></div>
+    <div class="first card"><span>1</span></div>
+  </div>
+
+  <div class="flex-container">
+    <div class="first card"><span>1</span></div>
+    <div class="second card"><span>1/2</span></div>
+    <div class="third card"><span>1/4</span></div>
+    <div class="fourth card"><span>1/8</span></div>
+  </div>
+
+  <div class="flex-container">
+    <div class="fourth card"><span>1/8</span></div>
+    <div class="third card"><span>1/4</span></div>
+    <div class="second card"><span>1/2</span></div>
+    <div class="first card"><span>1</span></div>
+  </div>
+
+  <div class="flex-container">
+    <div class="first card"><span>1</span></div>
+    <div class="second card"><span>1/2</span></div>
+    <div class="third card"><span>1/4</span></div>
+    <div class="fourth card"><span>1/8</span></div>
+  </div>
+
+  <div class="flex-container">
+    <div class="fourth card"><span>1/8</span></div>
+    <div class="third card"><span>1/4</span></div>
+    <div class="second card"><span>1/2</span></div>
+    <div class="first card"><span>1</span></div>
+  </div>
+
+</body>
+
+</html>
